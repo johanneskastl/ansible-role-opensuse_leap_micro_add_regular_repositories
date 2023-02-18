@@ -10,7 +10,6 @@ repo_update_non_oss_enabled: '1'
 repo_backports_update_enabled: '1'
 repo_backports_debug_update_enabled: '0'
 
-repo_debug_enabled: '0'
 repo_debug_non_oss_enabled: '0'
 repo_debug_update_enabled: '0'
 repo_debug_update_non_oss_enabled: '0'
