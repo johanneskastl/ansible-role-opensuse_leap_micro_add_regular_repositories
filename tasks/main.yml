@@ -1,0 +1,29 @@
+---
+# opensuse_leap_micro_add_regular_repositories/tasks/main.yml
+
+- name: 'Create standard repositories'
+  ansible.builtin.template:
+    src: "{{ item }}.j2"
+    dest: "/etc/zypp/repos.d/{{ item }}"
+    owner: 'root'
+    group: 'root'
+    mode: '0644'
+  notify:
+    - 'Run zypper refresh'
+  loop:
+    - 'repo-backports-debug-update.repo'
+    - 'repo-backports-update.repo'
+    - 'repo-debug-non-oss.repo'
+    - 'repo-debug.repo'
+    - 'repo-debug-update-non-oss.repo'
+    - 'repo-debug-update.repo'
+    - 'repo-non-oss.repo'
+    - 'repo-oss.repo'
+    - 'repo-sle-debug-update.repo'
+    - 'repo-sle-update.repo'
+    - 'repo-source.repo'
+    - 'repo-update-non-oss.repo'
+    - 'repo-update.repo'
+
+- name: 'Flush handlers to trigger zypper refresh'
+  ansible.builtin.meta: flush_handlers
