@@ -1,0 +1,7 @@
+---
+# opensuse_leap_micro_add_regular_repositories/handlers/main.yml
+
+- name: 'Run zypper refresh'
+  community.general.zypper_repository:
+    name: '*'
+    runrefresh: 'true'
