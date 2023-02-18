@@ -28,7 +28,6 @@
     - 'repo-backports-debug-update.repo'
     - 'repo-backports-update.repo'
     - 'repo-debug-non-oss.repo'
-    - 'repo-debug.repo'
     - 'repo-debug-update-non-oss.repo'
     - 'repo-debug-update.repo'
     - 'repo-non-oss.repo'
