@@ -1,6 +1,20 @@
 ---
 # opensuse_leap_micro_add_regular_repositories/tasks/main.yml
 
+- name: 'Set correct releasever variable on openSUSE Leap Micro'
+  ansible.builtin.set_fact:
+    releasever: '15.4'
+  when:
+    - 'ansible_os_family == "openSUSE Leap Micro"'
+    - 'ansible_distribution_version == "5.3"'
+
+- name: 'Set correct releasever variable on openSUSE Leap 15.4'
+  ansible.builtin.set_fact:
+    releasever: '$releasever'
+  when:
+    - 'ansible_os_family == "Suse"'
+    - 'ansible_distribution_version == "15.4"'
+
 - name: 'Create standard repositories'
   ansible.builtin.template:
     src: "{{ item }}.j2"
