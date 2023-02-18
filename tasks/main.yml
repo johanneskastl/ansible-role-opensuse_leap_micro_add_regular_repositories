@@ -35,7 +35,6 @@
     - 'repo-oss.repo'
     - 'repo-sle-debug-update.repo'
     - 'repo-sle-update.repo'
-    - 'repo-source.repo'
     - 'repo-update-non-oss.repo'
     - 'repo-update.repo'
 
