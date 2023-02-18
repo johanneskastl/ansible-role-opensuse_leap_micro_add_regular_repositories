@@ -2,7 +2,7 @@
 name=Update repository with debuginfo for updates from SUSE Linux Enterprise 15
 enabled={{ repo_sle_debug_update_enabled }}
 autorefresh=1
-baseurl=http://download.opensuse.org/debug/update/leap/$releasever/sle/
+baseurl=http://download.opensuse.org/debug/update/leap/{{ releasever }}/sle/
 path=/
 type=rpm-md
 keeppackages=0
