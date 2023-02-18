@@ -1,0 +1,21 @@
+---
+# opensuse_leap_micro_add_regular_repositories/defaults/main.yml
+
+repo_oss_enabled: '1'
+repo_non_oss_enabled: '1'
+
+repo_update_oss_enabled: '1'
+repo_update_non_oss_enabled: '1'
+
+repo_backports_update_enabled: '1'
+repo_backports_debug_update_enabled: '0'
+
+repo_debug_enabled: '0'
+repo_debug_non_oss_enabled: '0'
+repo_debug_update_enabled: '0'
+repo_debug_update_non_oss_enabled: '0'
+
+repo_sle_update_enabled: '1'
+repo_sle_debug_update_enabled: '0'
+
+repo_source_enabled: '0'
