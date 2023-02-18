@@ -1,0 +1,19 @@
+galaxy_info:
+  role_name: 'opensuse_leap_micro_add_regular_repositories'
+  namespace: 'johanneskastl'
+  author: 'Johannes Kastl'
+  description: 'Add the regular openSUSE Leap repositories on a openSUSE Leap Micro installation'
+  company: 'B1 Systems GmbH'
+
+  license: 'BSD-3-Clause'
+
+  min_ansible_version: '2.12'
+
+  platforms:
+    - name: opensuse
+      versions:
+        - '15.4'
+
+  galaxy_tags: []
+
+dependencies: []
